@@ -3,7 +3,7 @@ from flet import (  Checkbox,Column,FloatingActionButton,
                     IconButton,OutlinedButton,Page,
                     Row,Tab,Tabs,
                     Text,TextField,UserControl,
-                    colors,icons,
+                    colors,icons,WEB_BROWSER
 )
 
 
@@ -172,4 +172,4 @@ def main(page: Page):
     page.add(app)
 
 
-flet.app(target=main)
+flet.app(port=1251, target=main, view=WEB_BROWSER)
